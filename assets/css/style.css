@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #e9e8e8;
+}
+
+.wrapper-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, 290px);
+    grid-gap:100px;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    padding-bottom:60px;
+}
+
+.box{
+    display:flex;
+    /*height:340px;*/
+    height:125px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    transition: .4s ease-in;
+}
+
+.box:hover{
+    height: 340px;
+}
+.box1{
+    background:linear-gradient(180deg, rgb(51,216,253),rgb(3,147,243));  
+}
+
+.box-trangle1{
+    display:flex;
+    position:absolute;
+    width:0;
+    height:0;
+    right:24px;
+    bottom:-39px;
+    border-left:0px solid transparent;
+    border-right:88px solid transparent;
+    border-top:40px solid rgb(3,137,221)
+}
+
+.box .inner-box{
+    display:flex;
+    justify-content:center;
+    width:224px;
+    height:240px;
+    background:ghostwhite;
+    border-radius:30px;
+    position:absolute;
+    box-shadow: rgba(17,17,26,0.1) 0px 4px 16px,
+    rgba(17,17,26,0.1)0px 8px 24px, rgba(17,17,26,0.1) 0px 16px 56px;
+    top:-54px;
+    visibility: hidden;
+    opacity: 0;
+    transition: -2s ease-in;
+}
+
+.box:hover .inner-box{
+    visibility: visible;
+    opacity: 1;
+    transition: 1s ease-in;
+}
+
+.trangle{
+    display:flex;
+    position:absolute;
+    bottom:-30px;
+    width:0;
+    height:0;
+    border-left:28px solid transparent;
+    border-right:28px solid transparent;
+    border-top:30px solid ghostwhite;
+}
+
+.inner-box ol{
+    margin-top:12px;
+    padding:36px;
+    position:absolute;
+    text-align:left;
+}
+
+.inner-box ol li{
+    font-size:12px;
+    font-weight:800;
+    line-height: 25px;
+}
+
+.inner-box ol p{
+    font-size:12px;
+    color:#666;
+}
+
+.blue li{
+    color:rgb(2,128,212);
+}
+
+.title{
+    width:100%;
+    position:absolute;
+    bottom:14px;
+    left:34px;
+}
+
+.box .title .lefft{
+    float:left;
+}
+
+.title .lefft h1{
+    font-size: 80px;
+    padding-right: 10px;
+}
+
+.title .right h4{
+    font-size:18px;
+    font-weight:800;
+    padding-top:8px;
+    text-align:left;
+    padding-bottom:5px;
+}
+
+.title h1, h4{
+    color:#fff;
+}
+
+.title .right p{
+    font-size: 10px;
+    text-align:left;
+    font-weight:600;
+    color:rgb(219,218,218);
+}
